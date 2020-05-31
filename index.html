@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="form.css">
+	<title>Survey Form</title>
+</head>
+
+<body>
+
+	<div id="header">
+
+		<h1 id="title">Survey Form</h1>
+
+	</div>
+
+	<div id="main">
+
+		<p id="description">Let us know how we can improve freecodecamp</p>
+
+		<div id="container">
+
+			<form id="survey-form" action="GET" method="GET">
+				<fieldset>
+					<legend>Please Enter Your Info</legend>
+
+					<div class="spacing">
+						<input type="text" id="name" name="user_name" required placeholder="Name">
+						<label id="name-label" class="text-center" for="name">Name:</label>
+					</div>
+
+					<div class="spacing">
+						<input id="email" type="email" name="user_mail" required placeholder="Email">
+						<label id="email-label" class="text-center" for="email">E-mail:</label>
+					</div>
+
+					<div class="spacing">
+						<!-- The step attrib fixes the width issue when both min max are entered -->
+						<input type="number" id="number" name="user_age" required placeholder="Age" min="8" max="100" step="any">
+						<label id="number-label" class="text-center" for="number">Age:</label>
+					</div>
+
+				</fieldset>
+
+				<fieldset>
+
+					<legend>Please Make Your Selections</legend>
+
+					<div class="spacing">
+						<select id="dropdown" name="role">
+							<option value="#" selected disabled>Select an option</option>
+							<option value="student">Student</option>
+							<option value="full-time-job">Full time job</option>
+							<option value="full-time-learner">Full time learner</option>
+							<option value="prefer-not-to-say">Prefer not to say</option>
+							<option value="other">Other</option>
+						</select>
+						<div>
+							<label class="text-center" for="role">Which option best describes your current role?</label>
+						</div>
+					</div>
+
+					<div class="spacing">
+
+						<div>
+							<p>How likely is it that you would recommend freecodecamp to a friend?</p>
+						</div>
+						<div class="flex-column">
+							<div>
+								<input type="radio" id="definately" name="recommend" value="Definately" required>
+								<label for="definately">Definately</label>
+							</div>
+
+							<div>
+								<input type="radio" id="maybe" name="recommend" value="Maybe">
+								<label for="maybe">Maybe</label>
+							</div>
+
+							<div>
+								<input type="radio" id="not-sure" name="recommend" value="Not sure">
+								<label for="not-sure">Not sure</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="spacing">
+						<select id="dropdown" name="fcc">
+							<option value="#" selected disabled>Select an option</option>
+							<option value="challenges">Challenges</option>
+							<option value="projects">Projects</option>
+							<option value="community">Community</option>
+							<option value="open-source">Open Source</option>
+						</select>
+						<div>
+							<label class="text-center" for="fcc">What do you like most in FCC?</label>
+						</div>
+					</div>
+
+					<div class="spacing">
+
+						<div>
+							<p>Things that should be improved in the future (Check all that apply):</p>
+						</div>
+
+						<div class="flex-column">
+
+							<div>
+								<input type="checkbox" id="front-end-projects" name="improved" value="front-end-projects">
+								<label for="front-end-projects">Front-end Projects</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="back-end-projects" name="improved" value="back-end-projects">
+								<label for="back-end-projects">Back-end Projects</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="data-visualization" name="improved" value="data-visualization">
+								<label for="data-visualization">Data Visualization</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="challenges" name="improved" value="challenges">
+								<label for="challenges">Challenges</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="open-source-community" name="improved" value="open-source-community">
+								<label for="open-source-community">Open Source Community</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="gitter-help-rooms" name="improved" value="gitter-help-rooms">
+								<label for="gitter-help-rooms">Gitter Help Rooms</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="videos" name="improved" value="videos">
+								<label for="videos">Videos</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="city-meetups" name="improved" value="city-meetups">
+								<label for="city-meetups">City Meetups</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="wiki" name="improved" value="wiki">
+								<label for="wiki">Wiki</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="forum" name="improved" value="forum">
+								<label for="forum">Forum</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="additional-courses" name="improved" value="additional-courses">
+								<label for="additional-courses">Additional Courses</label>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<textarea id="suggestions" name="suggestions" placeholder="Enter your comment here . . ."></textarea>
+						<label class="text-center" for="suggestions">Any Comments or Suggestions?</label>
+					</div>
+
+					<div id="buttons">
+						<input id="submit" type="submit" placeholder="Submit">
+						<input id="reset" type="reset" placeholder="Reset">
+					</div>
+
+				</fieldset>
+
+		</div>
+
+		</form>
+
+	</div>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

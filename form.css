@@ -1,0 +1,152 @@
+body {
+  background-color: #81717a;
+  color: #f5e6e8;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#container {
+  width: 38rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#description {
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+  background-color: #d8e2dc;
+  color: #435058;
+  border: none;
+}
+
+fieldset div {
+  display: flex;
+  align-items: center;
+  width: 30rem;
+}
+
+legend {
+  background-color: #d8e2dc;
+  color: #435058;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-top: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+label {
+  order: 1;
+  width: 20em;
+  padding-right: 0.5em;
+}
+
+input,
+textarea,
+select {
+  order: 2;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  order: 1;
+}
+
+input[type="checkbox"] ~ label,
+input[type="radio"] ~ label {
+  width: 15em;
+  padding-left: 0.4em;
+}
+
+textarea {
+  width: 100%;
+  height: 7rem;
+  resize: none;
+}
+
+#buttons {
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#submit {
+  margin-right: 1rem;
+}
+
+p {
+  width: 20em;
+  padding-right: 0.5em;
+  text-align: center;
+}
+
+.flex-column {
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.spacing {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 575px) {
+  #container {
+    width: 20rem;
+    margin-left: 0;
+  }
+
+  fieldset div {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .flex-column {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  label {
+    order: 1;
+    width: 20em;
+    padding-right: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  input,
+  textarea,
+  select {
+    order: 2;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    order: 1;
+    flex-wrap: wrap;
+  }
+
+  textarea {
+    width: 50%;
+    height: 7rem;
+    resize: none;
+  }
+}
